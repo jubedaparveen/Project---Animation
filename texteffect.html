@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #130000;
+        }
+
+        section {
+            display: FLEX;
+            justify-content: CENTER;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            color: RED;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li:first-child {
+            border-radius: 15px 0 0 15px;
+        }
+
+        ul li:last-child {
+            border-radius: 0 15px 15px 0;
+        }
+
+        ul:hover li:nth-child(odd) {
+            transform: skewY(20deg);
+
+        }
+
+        ul:hover li:nth-child(even) {
+            transform: skewY(-20deg);
+            box-shadow: inset 0 40px 50px 0px grey;
+            box-shadow: 0 40px 50px 0px red;
+            transition: transform 0.2s ease-in-out;
+            font-family: "Matemasie", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li>J</li>
+            <li>U</li>
+            <li>B</li>
+            <li>E</li>
+            <li>D</li>
+            <li>A</li>
+            <li>P</li>
+            <li>A</li>
+            <li>R</li>
+            <li>V</li>
+            <li>E</li>
+            <li>E</li>
+            <li>N</li>
+        </ul>
+    </section>
+</body>
+
+</html>
